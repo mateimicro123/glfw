@@ -4,6 +4,8 @@ project "GLFW"
     targetdir ("bin/" .. outputdir .. "/GLFW")
     objdir ("bin-int/" .. outputdir .. "/GLFW")
 
+    staticruntime "On"
+
     files
     {
         "include/GLFW/glfw3.h",
@@ -22,7 +24,6 @@ project "GLFW"
         pic "On"
 
         systemversion "latest"
-        staticruntime "On"
 
         files
         {
